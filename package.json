@@ -1,0 +1,24 @@
+{
+  "name": "freequotesapp",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": {
+    "node": ">=22"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "scripts": {
+    "dev": "pnpm --filter @quotes/web dev",
+    "build": "pnpm --filter @quotes/web build",
+    "preview": "pnpm --filter @quotes/web preview",
+    "typecheck": "pnpm --filter @quotes/web exec tsc -b",
+    "test": "pnpm --filter @quotes/web test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeappstore-online/quotes.git"
+  }
+}
